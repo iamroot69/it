@@ -1,0 +1,64 @@
+{
+    "pets": [
+        {
+            "name": "Bella",
+            "age": 3,
+            "weight": 10,
+            "type": "dog"
+        },
+        {
+            "name": "Max",
+            "age": 5,
+            "weight": 15,
+            "type": "cat"
+        },
+        {
+            "name": "Charlie",
+            "age": 2,
+            "weight": 8,
+            "type": "dog"
+        },
+        {
+            "name": "Lucy",
+            "age": 4,
+            "weight": 12,
+            "type": "cat"
+        },
+        {
+            "name": "Cooper",
+            "age": 1,
+            "weight": 6,
+            "type": "dog"
+        },
+        {
+            "name": "Luna",
+            "age": 3,
+            "weight": 9,
+            "type": "cat"
+        },
+        {
+            "name": "Rocky",
+            "age": 6,
+            "weight": 18,
+            "type": "dog"
+        },
+        {
+            "name": "Milo",
+            "age": 2,
+            "weight": 7,
+            "type": "cat"
+        },
+        {
+            "name": "Daisy",
+            "age": 4,
+            "weight": 11,
+            "type": "dog"
+        },
+        {
+            "name": "Oliver",
+            "age": 3,
+            "weight": 14,
+            "type": "cat"
+        }
+    ]
+}

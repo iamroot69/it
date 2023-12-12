@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet illo
+            culpa totam, obcaecati consectetur, aspernatur quibusdam rerum
+            officiis numquam tempora optio accusamus quisquam quidem itaque,
+            blanditiis aliquid voluptatum exercitationem fugiat!
+        </p>
+        <button id="btn1" onclick="changeColor('red')">Red</button>
+        <button id="btn2" onclick="changeColor('green')">Green</button>
+        <button id="btn3" onclick="changeColor('blue')">Blue</button>
+        <button id="btn4" onclick="changeSize(10)">10</button>
+        <button id="btn5" onclick="changeSize(20)">20</button>
+        <button id="btn6" onclick="changeSize(30)">30</button>
+        <button id="btn7" onclick="changeFont('Gill Sans')">Gill Sans</button>
+        <button id="btn8" onclick="changeFont('Tahoma')">Tahoma</button>
+        <button id="btn9" onclick="changeFont('cursive')">cursive</button>
+    </body>
+    <script>
+        let p = document.getElementsByTagName("p")[0];
+        function changeColor(c) {
+            p.style.color = c;
+        }
+        function changeSize(c) {
+            p.style.fontSize = c + "px";
+        }
+        function changeFont(c) {
+            p.style.fontFamily = c;
+            console.log("font changed");
+        }
+    </script>
+</html>

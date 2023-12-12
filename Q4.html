@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div></div>
+    </body>
+    <script>
+        function getRandomColor() {
+            let arr = "0123456789ABCDEF";
+            let color = "#";
+            for (let i = 0; i < 6; i++) {
+                color += arr[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        let div = document.getElementsByTagName("div")[0];
+        let i = 2;
+        let interval = setInterval(function () {
+            console.log("hi");
+            let r = "";
+            for (let j = 0; j <= 10; j++) {
+                r = r + i + "x" + j + "=" + i * j + "       ";
+            }
+            let p = document.createElement("p");
+            p.innerHTML = r;
+            p.style.fontSize = i * 2 + "px";
+            p.style.color = getRandomColor();
+            div.appendChild(p);
+            r = "";
+            i++;
+            if (i == 11) clearInterval(interval);
+        }, 1000);
+    </script>
+</html>

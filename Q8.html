@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .body {
+                align-items: center;
+                text-align: center;
+                font-family: "Lucida Sans", "Lucida Sans Regular",
+                    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+                    sans-serif;
+                background-color: #ffecb2;
+            }
+            .div {
+                text-align: left;
+                margin-left: 30vw;
+            }
+            .h1 {
+                background-color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>BSc. (H) Computer Science</h1>
+        <h3>Free Structure</h3>
+        <div>
+            <p>Fee Structure : $Something</p>
+        </div>
+        <h3>Eligibility Criteria</h3>
+        <div>
+            <ul>
+                <li>Passed 12th with at least 60%</li>
+                <li>Had 67% attendance in 12th</li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+            </ul>
+        </div>
+        <button id="btn" type="button">Redesign</button>
+        <script src="js/jquery-3.7.1.js"></script>
+        <script>
+            $("#btn").on("click", function () {
+                $("body").addClass("body");
+                $("div").addClass("div");
+                $("h1").addClass("h1");
+            });
+        </script>
+    </body>
+</html>
